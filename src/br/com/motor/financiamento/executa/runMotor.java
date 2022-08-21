@@ -21,6 +21,28 @@ public class runMotor {
         DateFormat f = DateFormat.getDateInstance();
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
+        // CALCULO GERAL
+        // calcular Taxa Efetiva para Mes
+        // calcular Taxa Efetiva para nominal
+        // calcular amortizacao
+        // loop
+            // calculo primeira prestacao
+                // calcular quantidade de dias entre entre a simulacao e a primeira parcela
+            // calculo prestacao
+                // calcular juros da operacao
+                // calcular seguro
+                // calcular MIP
+                // calcular DFI
+            // valor
+        // loop
+
+
+
+
+
+        // calcular quantidade de dias entre entre a simulacao e a primeira parcela
+
+
 
 
     }
@@ -83,7 +105,7 @@ public class runMotor {
 
         // y = (1/d)
         BigDecimal potencia = BigDecimal.ONE.divide(new BigDecimal("30"), 8, RoundingMode.FLOOR);
-        System.out.println("y = (1/360) = " +  potencia); // tem que dar 0.03333
+        System.out.println("y = (1/360) = " +  potencia);
 
         double taxaDouble = Double.parseDouble(taxaDia.toString());
         double potenciaDouble = Double.parseDouble(potencia.toString());
